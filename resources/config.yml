@@ -1,0 +1,17 @@
+item: "iron_nugget"
+
+permission:
+  enabled: false
+  name: "unclaimfinder.use"
+
+worlds: #Leave empty if you want the unclaimed finder to work on all worlds.
+  - "world"
+
+blocks: #only tile entities
+  - "chest"
+  - "barrel"
+  - "furnace"
+  - "shulker_box"
+  - "ender_chest"
+
+format: "§a{count} §b%"
