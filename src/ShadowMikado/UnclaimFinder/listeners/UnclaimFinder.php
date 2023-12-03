@@ -51,8 +51,8 @@ class UnclaimFinder implements Listener {
     }
 
     private function isUnclaimFinder(Item $item): bool {
-        $handglider = $this->nameToItem(Main::$config->get("item"))->getTypeId();
-        return $item->getTypeId() === $handglider;
+        $unclaimfinder = $this->nameToItem(Main::$config->get("item"))->getTypeId();
+        return $item->getTypeId() === $unclaimfinder;
     }
 
     private function nameToItem(string $name): Item {
