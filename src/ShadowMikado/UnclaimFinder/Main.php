@@ -16,23 +16,15 @@ class Main extends PluginBase implements Listener
 
     public function onLoad(): void
     {
-        $this->getLogger()->info("Loading...");
         self::setInstance($this);
     }
 
     public function onEnable(): void
     {
-        $this->getLogger()->info("Enabling...");
         $this->saveDefaultConfig();
         self::$config = $this->getConfig();
 
         $this->getServer()->getPluginManager()->registerEvents(new UnclaimFinder(), $this);
-
-    }
-
-    public function onDisable(): void
-    {
-        $this->getLogger()->info("Disabling...");
 
     }
 }
