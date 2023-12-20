@@ -4,7 +4,9 @@
 A plugin that helps you to find tile entities in specific world.
 
 ## How to use
-Configure the item ID, permissions, worlds, blocks, and format in the `config.yml` file.
+Configure the item ID, permissions, worlds, blocks, and format in the `config.yml` file. 
+
+(permission is now starting with `unclaimfinder` + `yourpermissionname`
 
 ## Config
 ```yaml
