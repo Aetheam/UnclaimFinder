@@ -2,7 +2,7 @@ item: "iron_nugget"
 
 permission:
   enabled: false
-  name: "unclaimfinder.use"
+  name: "unclaimfinder.use" #here the final permission is unclaimfinder.unclaimfinder.use
 
 worlds: #Leave empty if you want the unclaimed finder to work on all worlds.
   - "world"
