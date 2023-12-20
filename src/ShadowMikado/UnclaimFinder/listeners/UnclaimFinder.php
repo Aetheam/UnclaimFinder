@@ -47,7 +47,7 @@ class UnclaimFinder implements Listener {
         $permissionEnabled = Main::$config->getNested("permission.enabled");
         $permissionName = Main::$config->getNested("permission.name");
 
-        return $permissionEnabled ? $player->hasPermission($permissionName) : true;
+        return $permissionEnabled ? $player->hasPermission("unclaimfinder" . $permissionName) : true;
     }
 
     private function isUnclaimFinder(Item $item): bool {
